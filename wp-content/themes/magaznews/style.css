@@ -2348,7 +2348,7 @@ body.single .site-content {
 	@media (max-width: 425px) {
 		gap: 6px;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
 	}
 }
 

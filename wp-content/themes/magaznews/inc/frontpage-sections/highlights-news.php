@@ -46,42 +46,43 @@ if ($query->have_posts()) :
 	$section_title    = get_theme_mod('magaznews_highlights_news_title', __('Highlights News', 'magaznews'));
 ?>
 	<div id="magaznews_highlights_news_section" class="news-highlights">
+		<div class="tradingview-widget-">
+			<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols": [{
+							"proName": "IDX:COMPOSITE",
+							"title": "IHSG"
+						},
+						{
+							"proName": "NASDAQ:QQQ",
+							"title": "NASDAQ QQQ"
+						},
+						{
+							"proName": "AMEX:SPY",
+							"title": "S&P 500"
+						},
+						{
+							"proName": "AMEX:GLD",
+							"title": "GOLD"
+						},
+						{
+							"proName": "BINANCE:BTCUSDT",
+							"title": "BITCOIN"
+						}
+					],
+					"showSymbolLogo": true,
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"colorTheme": "dark",
+					"locale": "id"
+				}
+			</script>
+		</div>
 		<div class="site-container-width">
 			<div class="news-highlights-container">
-				<div class="tradingview-widget-container">
-					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-						{
-							"symbols": [{
-									"proName": "IDX:COMPOSITE",
-									"title": "IHSG"
-								},
-								{
-									"proName": "NASDAQ:QQQ",
-									"title": "NASDAQ QQQ"
-								},
-								{
-									"proName": "AMEX:SPY",
-									"title": "S&P 500"
-								},
-								{
-									"proName": "AMEX:GLD",
-									"title": "GOLD"
-								},
-								{
-									"proName": "BINANCE:BTCUSDT",
-									"title": "BITCOIN"
-								}
-							],
-							"showSymbolLogo": true,
-							"isTransparent": false,
-							"displayMode": "adaptive",
-							"colorTheme": "dark",
-							"locale": "id"
-						}
-					</script>
-				</div>
 			</div>
 		</div>
 	</div>
 <?php
 endif;
+
